@@ -1,0 +1,11 @@
+services:
+  postgres:
+    image: postgres:latest
+    container_name: djangocrud
+    restart: always
+    environment:
+      POSTGRES_DB: djangodb
+      POSTGRES_USER: django
+      POSTGRES_PASSWORD: django
+    ports:
+      - "5432:5432"
